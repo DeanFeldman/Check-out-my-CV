@@ -41,7 +41,7 @@ const projects = [
     gradient: "linear-gradient(145deg, #126b61, #123632 55%, #0c1719)"
   },
   {
-    title: "SourceFin Credit Intelligence",
+    title: "Credit Intelligence",
     category: "dashboard",
     label: "Financial technology",
     description: "An AI-enabled credit monitoring and committee workflow prototype with portfolio analytics, covenant tracking and reporting.",
