@@ -17,11 +17,11 @@ const projects = [
     description: "A browser-based implementation of Kalooki with interactive cards, game-state logic and a responsive playing table.",
     tags: ["JavaScript", "Game Logic", "GitHub Pages"],
     sourceUrl: "https://github.com/DeanFeldman/Kalooki",
-    liveUrl: "https://kalooki.onrender.com/",
+    liveUrl: "",
     gradient: "linear-gradient(145deg, #126b61, #123632 55%, #0c1719)"
   },
   {
-    title: "Financial Intelligence",
+    title: "SourceFin Intelligence",
     category: "dashboard",
     label: "Finance dashboard",
     description: "A post-deal credit intelligence and qualification interface that turns spreadsheet-based information into a clearer workflow.",
@@ -31,26 +31,35 @@ const projects = [
     gradient: "linear-gradient(145deg, #3362a5, #182e51 55%, #0d1522)"
   },
   {
-    title: "Ubuntu Health",
+    title: "PowerApp Converter",
     category: "web-app",
     label: "Developer tool",
-    description: "AThe system helps patients book appointments, join virtual clinic queues, and track their waiting position, while giving clinic staff and admins tools to manage patient flow, clinic information, notifications, and analytics.",
-    tags: ["Node", "React", "JS"],
-    sourceUrl: "https://github.com/DeanFeldman/Ubuntu-Health",
-    liveUrl: "https://ubuntu-health-geb6dbegejfmenc7.southafricanorth-01.azurewebsites.net",
+    description: "An experimental converter that explores transforming Power Apps packages into a React frontend and C# backend structure.",
+    tags: ["Python", "React", "C#"],
+    sourceUrl: "",
+    liveUrl: "",
     gradient: "linear-gradient(145deg, #9b3f79, #4b1d3b 55%, #1b1018)"
   },
   {
-    title: "Lend-A-HAND",
-    category: "Android App",
-    label: "Community Trading Business",
-    description: "mobile app designed to connect people who have surplus resources with those less fortunate. Users can donate items, request items and facilitate community-driven support through direct connections.",
-    tags: ["Java", "CSS", "Android"],
+    title: "ExamFuel",
+    category: "website",
+    label: "School business website",
+    description: "A colourful CAT PAT website presenting a student-focused exam snack and stationery business with survey-backed recommendations.",
+    tags: ["HTML5", "CSS", "CAT PAT"],
     sourceUrl: "",
     liveUrl: "",
     gradient: "linear-gradient(145deg, #dd7f35, #6b371c 55%, #20130e)"
   },
-  
+  {
+    title: "Gamified Learning Research",
+    category: "website",
+    label: "Research website",
+    description: "A multi-page educational website presenting research, spreadsheet findings and recommendations about gamification in learning.",
+    tags: ["HTML5", "Research", "Data"],
+    sourceUrl: "",
+    liveUrl: "",
+    gradient: "linear-gradient(145deg, #6d46b1, #302052 55%, #15101f)"
+  }
 ];
 
 const grid = document.querySelector("#project-grid");
