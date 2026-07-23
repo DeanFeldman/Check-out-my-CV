@@ -1,33 +1,34 @@
 # Dean Feldman — Website Showcase
 
-A responsive portfolio website for displaying different websites, dashboards, web apps and software projects in one place.
+A responsive portfolio for displaying Dean Feldman's websites, dashboards, mobile apps, games and software projects in one place.
+
+## Live site
+
+After GitHub Pages is enabled, the portfolio will be available at:
+
+```text
+https://deanfeldman.github.io/website-showcase/
+```
 
 ## Features
 
-- Modern dark portfolio design
+- Data-driven project cards generated from `script.js`
+- Project filters generated automatically from project categories
 - Responsive desktop and mobile layouts
-- Project filtering
-- Animated reveal effects
-- Live-site and source-code buttons
-- Easy project editing from one JavaScript array
-- Ready for GitHub Pages
-
-## Run locally
-
-No installation is required.
-
-Open `index.html` directly in your browser, or use VS Code Live Server.
+- Full CV page with print / Save as PDF support
+- LinkedIn, GitHub and email links
+- Design-inspiration section
+- GitHub Pages deployment workflow
+- Reduced-motion accessibility support
 
 ## Add or edit projects
 
-Open `script.js` and edit the `projects` array near the top of the file.
-
-Each project supports:
+Open `script.js` and edit the `projects` array.
 
 ```js
 {
   title: "Project name",
-  category: "web-app", // web-app, dashboard or website
+  category: "web-app",
   label: "Short project type",
   description: "Project description",
   tags: ["HTML", "CSS", "JavaScript"],
@@ -37,30 +38,42 @@ Each project supports:
 }
 ```
 
-Leave `sourceUrl` or `liveUrl` empty when the link is not available. The relevant button will appear disabled.
+The HTML project grid, total project count and filter buttons all update from this array. You do not need to manually add project cards to `index.html`.
 
-## Publish with GitHub Pages
+## CV
 
-1. Create a new GitHub repository, for example `website-showcase`.
-2. Add these files to the repository.
-3. Push the repository to GitHub.
-4. Open **Settings → Pages**.
-5. Under **Build and deployment**, select **GitHub Actions**.
-6. The included workflow will publish the website automatically.
+The full web CV is in `cv.html`. It includes a print button, allowing visitors to print it or save it as a PDF from their browser.
 
-Your public website should then be available at:
+The public page intentionally excludes a phone number. Update the contact section in `cv.html` if you want to publish one.
+
+## Design inspiration
+
+The portfolio lists the resources that informed its visual direction:
+
+- [Anime.js](https://animejs.com/)
+- [Motion](https://motion.dev/docs)
+- [Kokonut UI](https://kokonutui.com/docs)
+- [Bklit](https://bklit.com/)
+- [Manus](https://manus.im/)
+- [ReactBits](https://reactbits.dev/)
+
+## Run locally
+
+No installation is required. Open `index.html` directly or use the VS Code Live Server extension.
+
+## Deploy with GitHub Pages
+
+1. Open **Settings → Pages** in the GitHub repository.
+2. Under **Build and deployment**, choose **GitHub Actions**.
+3. Push or merge changes into `main`.
+4. The workflow in `.github/workflows/pages.yml` deploys the site.
+
+## Main files
 
 ```text
-https://DeanFeldman.github.io/website-showcase/
-```
-
-## Suggested Git commands
-
-```powershell
-git init
-git add .
-git commit -m "Create website showcase portfolio"
-git branch -M main
-git remote add origin https://github.com/DeanFeldman/website-showcase.git
-git push -u origin main
+index.html       Portfolio home page
+cv.html          Full CV page
+script.js        Project and design-source data
+styles.css       Shared styling
+assets/          Favicon and optional media
 ```
