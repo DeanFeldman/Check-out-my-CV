@@ -1,189 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Curriculum vitae for Dean Feldman, Computer Science student and software developer." />
-  <title>Dean Feldman | CV</title>
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Dean Feldman's professional CV: Computer Science, internships, consulting case competitions, leadership and projects.">
+  <meta name="theme-color" content="#091920">
+  <title>Dean Feldman — Curriculum Vitae</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body class="cv-page">
-  <header class="site-header cv-header">
-    <a class="brand" href="index.html" aria-label="Return to portfolio">
-      <span class="brand-mark">DF</span>
-      <span>Dean Feldman</span>
-    </a>
-    <nav class="nav cv-nav" aria-label="CV navigation">
-      <a href="index.html#projects">Projects</a>
-      <a href="https://github.com/DeanFeldman" target="_blank" rel="noreferrer">GitHub ↗</a>
-      <a href="https://www.linkedin.com/in/dean-feldman/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
-    </nav>
-    <div class="cv-header-actions">
-      <a class="print-button" href="assets/Dean-Feldman-CV.pdf" download="Dean-Feldman-CV.pdf">Download CV PDF ↓</a>
-      <button class="print-button print-button-secondary" type="button" onclick="window.print()">Print web CV</button>
+  <a class="skip-link" href="#main">Skip to CV</a>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="index.html" aria-label="Return to Dean Feldman portfolio"><span class="brand-icon">DF<span>.</span></span><span>Dean Feldman</span></a>
+      <button class="menu-button" type="button" aria-label="Toggle navigation" aria-controls="primary-nav" aria-expanded="false"><span></span><span></span></button>
+      <nav class="nav" id="primary-nav" aria-label="Primary navigation">
+        <a href="index.html#work">Work</a><a href="index.html#experience">Experience</a><a href="index.html#achievements">Achievements</a><a href="index.html#leadership">Leadership</a>
+        <a class="nav-contact" href="index.html">Portfolio ↗</a>
+      </nav>
     </div>
   </header>
-
-  <main class="resume-shell">
-    <section class="resume-hero">
-      <div>
-        <p class="eyebrow"><span></span> Curriculum vitae</p>
-        <h1>Dean<br />Feldman</h1>
-      </div>
-      <div class="resume-intro">
-        <h2>Computer Science student & software developer</h2>
-        <p>
-          Third-year BSc Computer Science student with interests in software engineering, artificial intelligence, machine learning, cybersecurity, data science, consulting and practical problem-solving.
-        </p>
-        <div class="resume-contact">
-          <a href="assets/Dean-Feldman-CV.pdf" download="Dean-Feldman-CV.pdf">Download PDF CV ↓</a>
-          <a href="mailto:dean.feldman05@gmail.com">dean.feldman05@gmail.com</a>
-          <a href="https://github.com/DeanFeldman" target="_blank" rel="noreferrer">github.com/DeanFeldman</a>
-          <a href="https://www.linkedin.com/in/dean-feldman/" target="_blank" rel="noreferrer">linkedin.com/in/dean-feldman</a>
-        </div>
-      </div>
-    </section>
-
-    <div class="resume-grid">
-      <aside class="resume-sidebar">
-        <section class="resume-section">
-          <h2>Education</h2>
-          <article>
-            <h3>University of the Witwatersrand</h3>
-            <p>BSc Computer Science</p>
-          </article>
-          <article>
-            <h3>King David Linksfield High School</h3>
-            <p>English, Afrikaans, Mathematics, Business Studies, Consumer Studies and Computer Applications Technology.</p>
-          </article>
-        </section>
-
-        <section class="resume-section">
-          <h2>Technical skills</h2>
-          <div class="resume-tags">
-            <span>Python</span><span>Java</span><span>C++</span><span>C#</span><span>C</span><span>JavaScript</span><span>PHP</span><span>SQL</span><span>HTML</span><span>CSS</span><span>React</span><span>Git/GitHub</span><span>Linux</span><span>Azure</span><span>LaTeX</span>
-          </div>
-        </section>
-
-        <section class="resume-section">
-          <h2>Strengths</h2>
-          <p>Problem-solving, critical thinking, communication, teamwork, leadership, project management, creativity, curiosity, logical reasoning and technical troubleshooting.</p>
-        </section>
-
-        <section class="resume-section">
-          <h2>Certifications</h2>
-          <ul>
-            <li>AWS Exploring Artificial Intelligence Use Cases & Applications</li>
-            <li>Cisco Introduction to Modern AI</li>
-            <li>MATLAB Onramp</li>
-            <li>MathWorks Machine Learning Onramp</li>
-            <li>MathWorks Simulink Onramp</li>
-          </ul>
-        </section>
+  <main class="cv-main shell" id="main">
+    <div class="cv-heading">
+      <div><p class="eyebrow eyebrow-dark">Professional profile / Curriculum vitae</p><h1>Dean Feldman</h1><p class="cv-subtitle">Computer Science × Consulting × Analytics × Technology</p></div>
+      <div class="cv-heading-actions"><button class="button button-primary" type="button" onclick="window.print()">Print / Save as PDF ↓</button><a class="button button-ghost" href="index.html">Portfolio ↗</a></div>
+    </div>
+    <p class="cv-summary">Third-year BSc Computer Science student at the University of the Witwatersrand with an interest in consulting, data analytics, financial services and technology-driven problem-solving. I bring practical exposure to business analysis and enterprise software through internships at FNB and Sourcefin, alongside competition wins at Grow@BCG 2025 and P&amp;G StandOut 2026, cybersecurity mentoring and hands-on product development.</p>
+    <div class="cv-details">
+      <aside class="cv-sidebar">
+        <section class="cv-block"><h2>Contact</h2><div class="cv-contact-links"><a href="mailto:dean.feldman05@gmail.com">dean.feldman05@gmail.com</a><a href="https://www.linkedin.com/in/dean-feldman/" target="_blank" rel="noopener noreferrer">linkedin.com/in/dean-feldman</a><a href="https://github.com/DeanFeldman" target="_blank" rel="noopener noreferrer">github.com/DeanFeldman</a><p>Johannesburg, South Africa</p></div></section>
+        <section class="cv-block"><h2>Education</h2><div class="cv-item"><h3>University of the Witwatersrand</h3><p class="cv-role">BSc Computer Science · Third year</p><p>Dean’s List (2024 &amp; 2025)<br>Golden Key Award Holder</p><p><strong>Certificates of Merit:</strong> Basic Analysis II, Computer Networks II, Database Fundamentals II, Introduction to Mathematical Statistics II.</p><p>University Entrance Scholarship (2024), University Council Merit Scholarships (2025–2026).</p></div><div class="cv-item"><h3>King David Linksfield High School</h3><p>National Senior Certificate</p></div></section>
+        <section class="cv-block"><h2>Programming &amp; tools</h2><div class="cv-tags"><span>Python</span><span>SQL</span><span>Java</span><span>TypeScript</span><span>JavaScript</span><span>C++</span><span>C#</span><span>React</span><span>Node.js</span><span>Spring Boot</span><span>PostgreSQL</span><span>Supabase</span><span>Git/GitHub</span><span>Linux</span><span>Microsoft Azure</span></div></section>
+        <section class="cv-block"><h2>Analysis &amp; business</h2><div class="cv-tags"><span>Data analysis</span><span>Financial modelling</span><span>Business analysis</span><span>Data visualisation</span><span>Market research</span><span>Requirements gathering</span><span>Stakeholder engagement</span><span>Presentations</span></div></section>
+        <section class="cv-block"><h2>Certifications</h2><ul><li>AWS — Exploring Artificial Intelligence Use Cases &amp; Applications</li><li>Cisco — Introduction to Modern AI</li><li>MathWorks — Machine Learning, MATLAB and Simulink Onramp</li></ul></section>
+        <section class="cv-block"><h2>Volunteering &amp; interests</h2><p>Monthly community food distribution. Cycling, video editing, baking and sound and lighting.</p></section>
       </aside>
-
-      <div class="resume-main">
-        <section class="resume-section">
-          <h2>Experience</h2>
-          <article class="resume-entry">
-            <div class="resume-entry-heading"><h3>FNB — POP Business Unit</h3><span>July 2026</span></div>
-            <p class="role">Vacation Work Intern</p>
-            <ul>
-              <li>Developed an AI-powered enterprise solution addressing operational challenges through modern software engineering and AI-assisted development.</li>
-              <li>Worked in an agile team using BMAD to analyse requirements, design a solution and deliver a functional MVP.</li>
-              <li>Built backend services with Java 21, Spring Boot, Spring Security, REST APIs and GPT-4o Vision.</li>
-            </ul>
-          </article>
-
-          <article class="resume-entry">
-            <div class="resume-entry-heading"><h3>SourceFin</h3><span>July 2026</span></div>
-            <p class="role">Credit Intelligence & Digital Transformation Intern</p>
-            <ul>
-              <li>Analysed credit approval and post-deal workflows with executives and stakeholders.</li>
-              <li>Designed a web-based Credit Committee Management System and an AI-enabled post-deal credit intelligence platform.</li>
-              <li>Created dashboards, workflow visualisations, prototypes and an implementation roadmap for executive stakeholders.</li>
-            </ul>
-          </article>
-
-          <article class="resume-entry">
-            <div class="resume-entry-heading"><h3>Visa Case Competition</h3><span>March 2026</span></div>
-            <p class="role">National Finalist</p>
-            <ul>
-              <li>Developed a customer value proposition for a South African credit card using market analysis and digital-first recommendations.</li>
-            </ul>
-          </article>
-
-          <article class="resume-entry">
-            <div class="resume-entry-heading"><h3>Quantify Your Future</h3><span>Jan–Feb 2026</span></div>
-            <p class="role">Participant — Nedbank, Standard Bank, FirstRand, Absa and FNB</p>
-            <ul>
-              <li>Completed data analysis projects covering framing, exploration, interpretation, modelling and visualisation.</li>
-            </ul>
-          </article>
-
-          <article class="resume-entry">
-            <div class="resume-entry-heading"><h3>CSIR SANReN Cybersecurity Challenge</h3><span>Aug–Dec 2025</span></div>
-            <p class="role">National Finalist</p>
-            <ul>
-              <li>Competed in CTF, attack-and-defence, API, machine-learning, lock-picking and MATLAB challenges.</li>
-              <li>Part of the first team to finish the Orange CyberDefence API Challenge; placed second individually in lock-picking.</li>
-            </ul>
-          </article>
-
-          <article class="resume-entry">
-            <div class="resume-entry-heading"><h3>Boston Consulting Group</h3><span>Aug–Sep 2025</span></div>
-            <p class="role">Grow@BCG Case Competition Winner</p>
-            <ul>
-              <li>Co-developed AfriGROW, a FinTech concept addressing South Africa's SMME funding gap through purchase-order financing, mentorship and AI-powered reporting.</li>
-            </ul>
-          </article>
+      <div class="cv-entries">
+        <section class="cv-block" id="experience">
+          <h2>Professional experience</h2>
+          <article class="cv-item"><span class="cv-date">JULY 2026</span><h3>FNB — POP Business Unit</h3><p class="cv-role">Vacation Work Intern</p><ul><li>Contributed to Project Compass, an AI-powered enterprise platform designed to address operational challenges and translate complex information into actionable insights.</li><li>Worked in a cross-functional team to analyse requirements, design solutions and deliver a functional MVP.</li><li>Built and integrated backend services using Java 21, Spring Boot, Spring Security, REST APIs and AI technologies.</li></ul></article>
+          <article class="cv-item" id="sourcefin"><span class="cv-date">JULY 2026</span><h3>Sourcefin — Credit Intelligence &amp; Digital Transformation</h3><p class="cv-role">Vacation Work Intern</p><ul><li>Analysed credit approval, purchase order financing and post-deal processes with stakeholders and executives.</li><li>Contributed to the design and prototyping of a web-based Credit Committee Management System and proposed credit intelligence tooling.</li><li>Created dashboards, workflow visualisations and prototypes; presented the proposed solution and roadmap to stakeholders.</li></ul></article>
+          <article class="cv-item"><span class="cv-date">JANUARY 2024 – PRESENT</span><h3>Self-employed</h3><p class="cv-role">Academic Tutor</p><p>Provide individualised support to high-school and matric students, explaining complex concepts and adapting lessons to improve understanding and exam readiness.</p></article>
         </section>
-
-        <section class="resume-section">
+        <section class="cv-block">
+          <h2>Competitions &amp; professional programmes</h2>
+          <article class="cv-item"><span class="cv-date">OCTOBER 2026 · WINNER</span><h3>P&amp;G StandOut 2026</h3><p>As part of a team, developed and presented a data-driven 12-month growth strategy for SlowMag in South Africa, combining consumer analysis, financial modelling, channel expansion and product innovation.</p></article>
+          <article class="cv-item"><span class="cv-date">MARCH 2026 · FINALIST</span><h3>Visa Case Competition</h3><p>Designed a customer value proposition for a South African credit card, using market benchmarking and customer insights to propose a digital-first product.</p></article>
+          <article class="cv-item"><span class="cv-date">JANUARY – FEBRUARY 2026</span><h3>QuantifyYourFuture Virtual Internship</h3><p>Completed financial services projects facilitated by Absa, FirstRand, FNB, Nedbank and Standard Bank; applied problem framing, data exploration, modelling and visualisation.</p></article>
+          <article class="cv-item"><span class="cv-date">2025 · NATIONAL FINALIST</span><h3>SANReN Cyber Security Challenge</h3><p>Competed in national finals, contributing to the first team to complete the Orange Cyberdefense API Challenge. Placed second individually in lock-picking.</p></article>
+          <article class="cv-item"><span class="cv-date">2025 · WINNER</span><h3>Grow@BCG Case Competition</h3><p>Co-developed AfriGROW, a FinTech concept addressing SMME financing through purchase order financing, mentorship and AI-enabled financial reporting.</p></article>
+          <article class="cv-item"><span class="cv-date">JULY 2025</span><h3>Deloitte VIBE Programme</h3><p>Selected for an industry insight programme spanning consulting, risk, audit and technology; led a case challenge team that placed first out of five teams.</p></article>
+        </section>
+        <section class="cv-block">
+          <h2>Leadership</h2>
+          <article class="cv-item"><span class="cv-date">FEBRUARY 2026 – PRESENT</span><h3>Wits Cybersecurity Interest Group</h3><p class="cv-role">Technical Cybersecurity Mentor</p><ul><li>Lead the group, coordinate cybersecurity training resources and infrastructure, and mentor students through practical CTF challenges.</li><li>Organised an internal CTF that prepared four students who qualified for the SANReN national finals.</li><li>Directed challenge design, deployment, operations and participant support for the 2026 Wits Cybersecurity Hackathon.</li></ul></article>
+          <article class="cv-item"><h3>King David Linksfield High School</h3><p class="cv-role">Student Leader — SMACC · Cycling Captain</p><p>Student leader in the Sound, Media and Communications Committee and captain of the cycling team. Received Sound and Lighting Honours, Cycling Full Colours and the Selfless Commitment Award.</p></article>
+        </section>
+        <section class="cv-block">
           <h2>Selected projects</h2>
-          <article class="resume-entry">
-            <h3>SourceFin Credit Intelligence Platform</h3>
-            <p>Full-stack prototype for AI-enabled credit monitoring, covenant tracking, committee workflows, analytics and automated reporting.</p>
-          </article>
-          <article class="resume-entry">
-            <h3>Ubuntu Health</h3>
-            <p>Community clinic appointment and queue-management platform built with React, Node.js, Express and Supabase.</p>
-          </article>
-          <article class="resume-entry">
-            <h3>Lend A Hand</h3>
-            <p>Android resource-sharing app using Java, PHP, MySQL and OkHttp.</p>
-          </article>
-          <article class="resume-entry">
-            <h3>Kalooki Multiplayer Game</h3>
-            <p>JavaScript multiplayer card game with synchronised state, turn handling, meld validation and scoring.</p>
-          </article>
-        </section>
-
-        <section class="resume-section">
-          <h2>Awards & leadership</h2>
-          <ul>
-            <li>Dean's List — first and second year</li>
-            <li>Golden Key Award holder</li>
-            <li>Certificates of Merit in Basic Analysis II, Database Fundamentals II, Computer Networks II and Introduction to Mathematical Statistics II</li>
-            <li>Coordinator of the Wits Cyber Interest Group</li>
-            <li>Grow@BCG Case Competition Winner</li>
-          </ul>
+          <article class="cv-item"><h3><a href="https://github.com/DeanFeldman/StatsTheGame" target="_blank" rel="noopener noreferrer">Stat'sTheGame ↗</a></h3><p>Event-driven sports analytics platform with validated data submissions, statistical dashboards, public API access and dataset exports. React, TypeScript, Node.js and PostgreSQL.</p></article>
+          <article class="cv-item"><h3><a href="https://github.com/DeanFeldman/Ubuntu-Health" target="_blank" rel="noopener noreferrer">Ubuntu Health ↗</a></h3><p>Community clinic appointment and queue management system with booking, virtual queue information and staff workflows, using React, Node.js, Express and Supabase.</p></article>
+          <article class="cv-item"><h3><a href="https://github.com/DeanFeldman/Wits-commute-simulator" target="_blank" rel="noopener noreferrer">7:55AM at Wits Edge ↗</a></h3><p>Three-level 3D browser game built in a six-person team using JavaScript, Three.js, WebGL and Vite.</p></article>
+          <article class="cv-item"><h3><a href="https://github.com/DeanFeldman/DocSync" target="_blank" rel="noopener noreferrer">DocSync ↗</a></h3><p>Local-first Windows document workflow application for comparing and coordinating changes across Word documents.</p></article>
         </section>
       </div>
     </div>
   </main>
-
-  <footer class="resume-footer">
-    <a href="index.html">← Return to portfolio</a>
-    <span>© <span id="year"></span> Dean Feldman</span>
-  </footer>
-
-  <script>
-    document.querySelector("#year").textContent = new Date().getFullYear();
-  </script>
+  <footer class="footer"><div class="shell footer-content"><a class="cv-back" href="index.html">← Back to portfolio</a><span>© <span id="year">2026</span> Dean Feldman</span><a href="mailto:dean.feldman05@gmail.com">Get in touch ↗</a></div></footer>
 </body>
 </html>
