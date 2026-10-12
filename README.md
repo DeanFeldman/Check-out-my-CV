@@ -43,8 +43,10 @@ Then visit http://localhost:8080. The site has no package manager dependencies.
 
 ## Publish on GitHub Pages
 
-Merge the redesign branch into `main`. Under **Settings → Pages**, set **Build and deployment** source to **GitHub Actions**. The workflow at `.github/workflows/pages.yml` deploys on push to `main`.
+Rename the repository in GitHub **Settings → General → Repository name** to exactly **`deanfeldman.github.io`** (lowercase), then click **Rename**. This converts it from a project site to the personal Pages root site. If the old project URL was shared anywhere, update it; GitHub does not automatically redirect Pages project URLs when repositories are renamed.
 
-Expected project Pages address: https://deanfeldman.github.io/Check-out-my-CV/
+Under **Settings → Pages**, set **Build and deployment** source to **GitHub Actions**. The workflow at `.github/workflows/pages.yml` deploys on push to `main`. GitHub may need a fresh deployment after renaming; if necessary, run the workflow manually from the Actions tab.
+
+Personal GitHub Pages address (after renaming the repository): **https://deanfeldman.github.io/**
 
 If the live website does not update, review **Actions**, ensure the repository (not an older `website-showcase` site) is deployed, and hard-refresh.
