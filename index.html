@@ -1,145 +1,220 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Dean Feldman — Computer Science student at Wits. A portfolio spanning software engineering, data analytics, consulting, financial services and cybersecurity leadership.">
-  <meta name="theme-color" content="#091921">
-  <meta property="og:title" content="Dean Feldman | Portfolio">
-  <meta property="og:description" content="Technology, analysis and business problem-solving. Explore projects, experience and achievements.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Dean Feldman — Computer Science student at Wits. Explore projects, analytics, internships, case competition wins, and cybersecurity leadership.">
+  <meta name="theme-color" content="#f4f0e7">
   <meta property="og:type" content="website">
-  <title>Dean Feldman — Portfolio | Technology × Business</title>
+  <meta property="og:title" content="Dean Feldman — Portfolio">
+  <meta property="og:description" content="A computer scientist who cares about the question before the code. Projects, experience and everything in between.">
+  <title>Dean Feldman — Projects, ideas & a few good questions</title>
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600;6..72,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header">
-    <div class="nav-shell">
-      <a class="brand" href="#top" aria-label="Dean Feldman home"><span class="brand-icon">DF<span>.</span></span><span>Dean Feldman</span></a>
-      <button class="menu-button" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav"><span></span><span></span></button>
-      <nav class="nav" id="primary-nav" aria-label="Primary navigation">
-        <a href="#work">Work</a><a href="#experience">Experience</a><a href="#achievements">Achievements</a><a href="#leadership">Leadership</a><a href="#about">About</a>
-        <a class="nav-contact" href="cv.html">View CV <span aria-hidden="true">↗</span></a>
+  <header class="site-header" id="top">
+    <div class="wrap header-inner">
+      <a class="site-logo" href="#top" aria-label="Dean Feldman — home">DF<span class="logo-dot">.</span><span class="logo-rule"></span><span class="logo-caption">PORTFOLIO / 2026</span></a>
+      <button type="button" class="menu-toggle" aria-controls="site-nav" aria-expanded="false" aria-label="Open navigation"><span></span><span></span></button>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a href="#work">Projects</a><a href="#experience">Experience</a><a href="#recognition">Achievements</a><a href="#leadership">Leadership</a><a href="#about">About</a>
+        <a class="nav-cv" href="cv.html">The CV <span aria-hidden="true">↗</span></a>
       </nav>
     </div>
   </header>
   <main id="main">
-    <section class="hero" id="top">
-      <div class="shell hero-grid">
-        <div class="hero-content">
-          <p class="eyebrow"><span class="eyebrow-dot"></span> Wits Computer Science · Johannesburg</p>
-          <h1>Technology thinker.<br><span class="text-accent">Business problem-solver.</span></h1>
-          <p class="hero-lede">I’m Dean — a third-year Computer Science student working at the intersection of <strong>software, data, financial services and consulting</strong>. I enjoy understanding difficult problems, finding the signal in the detail, and building solutions that make a difference.</p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#work">Explore my work <span aria-hidden="true">↗</span></a>
-            <a class="button button-ghost" href="cv.html">Explore my CV <span aria-hidden="true">→</span></a>
-          </div>
-          <div class="hero-meta"><span>Analytical thinking</span><i aria-hidden="true"></i><span>Practical delivery</span><i aria-hidden="true"></i><span>Continuous learning</span></div>
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-topline"><span>HELLO, INTERNET.</span><span>DEAN FELDMAN / JOHANNESBURG, ZA</span></div>
+      <div class="hero-headline">
+        <div class="hero-heading-area">
+          <p class="overline"><span class="marker"></span> Student. Developer. Problem-solver.</p>
+          <h1 id="hero-title">Curious<br>by <em>nature.</em><br><span class="scribble">Technical</span><br>by choice<span class="hero-period">.</span></h1>
         </div>
-        <div class="hero-showcase" aria-label="Areas of focus and experience">
-          <div class="showcase-top"><span class="small-label">My approach</span><span class="showcase-symbol" aria-hidden="true">↗</span></div>
-          <div class="showcase-title">From insight<br>to <em>impact.</em></div>
-          <div class="process-line" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
-          <div class="process-grid">
-            <div><span>01 / Understand</span><strong>Find the problem</strong></div>
-            <div><span>02 / Analyse</span><strong>Use evidence</strong></div>
-            <div><span>03 / Build</span><strong>Make it practical</strong></div>
-            <div><span>04 / Communicate</span><strong>Deliver clarity</strong></div>
-          </div>
-          <div class="showcase-bottom"><span>CONSULTING</span><span>DATA</span><span>ENGINEERING</span></div>
-        </div>
+        <aside class="hero-note">
+          <div class="note-top"><span>A NOTE FROM ME</span><span>↘</span></div>
+          <p>I’m a third-year Computer Science student at <strong>Wits</strong>. I like the space where messy business questions meet clean technical solutions.</p>
+          <p class="note-small">Currently exploring consulting, data, financial services and building useful software.</p>
+          <a href="#work" class="arrow-link">See what I’ve been making <span aria-hidden="true">↗</span></a>
+        </aside>
+      </div>
+      <div class="hero-bottom"><span>SCROLL TO EXPLORE <span aria-hidden="true">↓</span></span><span>MADE WITH CURIOSITY, NOT A TEMPLATE</span></div>
+    </section>
+
+    <section class="ticker" aria-label="Recent highlights">
+      <div class="wrap ticker-inner">
+        <p><strong>01</strong> Grow@BCG winner <span>2025</span></p>
+        <p><strong>02</strong> P&amp;G StandOut winner <span>2026</span></p>
+        <p><strong>03</strong> SANReN finalist <span>2025</span></p>
+        <p><strong>04</strong> Dean’s List <span>2024 / 2025</span></p>
       </div>
     </section>
-    <section class="proof-strip" aria-label="Selected highlights">
-      <div class="shell proof-grid">
-        <div><span>Competition wins</span><strong>BCG ’25 <span>+</span> P&amp;G ’26</strong></div>
-        <div><span>Industry exposure</span><strong>FNB <span>+</span> Sourcefin</strong></div>
-        <div><span>Cybersecurity</span><strong>SANReN finalist</strong></div>
-        <div><span>Academic recognition</span><strong>Dean’s List × 2</strong></div>
+
+    <section class="work-section" id="work" aria-labelledby="work-title">
+      <div class="wrap">
+        <div class="section-kicker"><span>01 / THE THINGS I BUILD</span><span>SELECTED WORK — 2024 TO NOW</span></div>
+        <div class="work-head">
+          <h2 id="work-title">Not just <i>ideas.</i><br><span>Things that work.</span></h2>
+          <p>From data-heavy applications to games and community platforms, these are projects that taught me something worth keeping.</p>
+        </div>
+        <div class="project-filters" role="group" aria-label="Filter projects">
+          <button type="button" class="filter-button is-active" data-filter="all" aria-pressed="true">All work <span>07</span></button>
+          <button type="button" class="filter-button" data-filter="analytics" aria-pressed="false">Data &amp; business</button>
+          <button type="button" class="filter-button" data-filter="software" aria-pressed="false">Software</button>
+          <button type="button" class="filter-button" data-filter="creative" aria-pressed="false">Creative</button>
+        </div>
+        <p id="filter-status" class="visually-hidden" aria-live="polite">Showing all 7 projects.</p>
+        <div class="project-grid">
+          <article class="project project-wide" data-category="analytics">
+            <div class="project-art art-stats" aria-label="Decorative cricket analytics data illustration">
+              <div class="art-meta"><span>STATS / 01</span><span>EST. 2026</span></div>
+              <div class="scoreboard">
+                <div class="scoreboard-top"><span>STAT'STHEGAME</span><span>↗</span></div>
+                <div class="scoreboard-runs"><b>DATA</b><span>/</span><b>INSIGHT</b></div>
+                <div class="scoreboard-lines"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+                <div class="scoreboard-foot"><span>COLLECT</span><span>VALIDATE</span><span>ANALYSE</span></div>
+              </div>
+            </div>
+            <div class="project-details">
+              <div class="project-no">01 <span>/ FEATURED PROJECT</span></div>
+              <h3>Stat’sTheGame</h3>
+              <p class="project-descriptor">Cricket analytics, made useful.</p>
+              <p>Event-driven sports analytics with validated submissions, derived statistics, a versioned API, datasets and interactive dashboards. Built collaboratively around a real data problem.</p>
+              <div class="tech-line">React <span>·</span> TypeScript <span>·</span> PostgreSQL <span>·</span> APIs</div>
+              <div class="project-actions"><a href="https://sport-analytics-tool-web.pages.dev/" target="_blank" rel="noopener noreferrer">Visit application ↗</a><a href="https://github.com/DeanFeldman/StatsTheGame" target="_blank" rel="noopener noreferrer">Source ↗</a></div>
+            </div>
+          </article>
+
+          <article class="project" data-category="software">
+            <div class="project-art art-health" aria-label="Decorative clinic appointment illustration">
+              <div class="art-meta"><span>UBUNTU / 02</span><span>HEALTHCARE</span></div>
+              <div class="queue-ticket">
+                <div class="queue-ticket-top"><span>UBUNTU HEALTH</span><span>✳</span></div>
+                <p>Making<br>waiting<br><em>easier.</em></p>
+                <div class="queue-ticket-bottom"><span>BOOK</span><span>TRACK</span><span>MANAGE</span></div>
+              </div>
+            </div>
+            <div class="project-details">
+              <div class="project-no">02 <span>/ WEB APPLICATION</span></div>
+              <h3>Ubuntu Health</h3>
+              <p>A clinic appointment and queue-management platform for South African communities, with booking, queue visibility and tools for staff.</p>
+              <div class="tech-line">React <span>·</span> Node.js <span>·</span> Supabase</div>
+              <div class="project-actions"><a href="https://ubuntu-health-geb6dbegejfmenc7.southafricanorth-01.azurewebsites.net" target="_blank" rel="noopener noreferrer">Visit application ↗</a><a href="https://github.com/DeanFeldman/Ubuntu-Health" target="_blank" rel="noopener noreferrer">Source ↗</a></div>
+            </div>
+          </article>
+
+          <article class="project" data-category="software">
+            <div class="project-art art-docs" aria-label="Decorative document comparison illustration">
+              <div class="art-meta"><span>DOCSYNC / 03</span><span>DESKTOP</span></div>
+              <div class="doc-stack">
+                <div class="doc-sheet doc-sheet-back"><span>DOCUMENT B</span><i></i><i></i><i></i><i></i></div>
+                <div class="doc-sheet doc-sheet-front"><span>DOCUMENT A</span><i></i><i></i><i></i><i></i><b>↔</b></div>
+              </div>
+            </div>
+            <div class="project-details">
+              <div class="project-no">03 <span>/ DESKTOP SOFTWARE</span></div>
+              <h3>DocSync</h3>
+              <p>A local-first Windows app for comparing Word documents, identifying repeated content and coordinating edits without overwriting originals.</p>
+              <div class="tech-line">Electron <span>·</span> React <span>·</span> TypeScript</div>
+              <div class="project-actions"><a href="https://github.com/DeanFeldman/DocSync/releases/latest" target="_blank" rel="noopener noreferrer">Get the app ↗</a><a href="https://github.com/DeanFeldman/DocSync" target="_blank" rel="noopener noreferrer">Source ↗</a></div>
+            </div>
+          </article>
+
+          <article class="project project-wide project-feature-split" data-category="analytics">
+            <div class="project-art art-credit" aria-label="Decorative credit decision workflow illustration">
+              <div class="art-meta"><span>SOURCEFIN / 04</span><span>FINANCIAL SERVICES</span></div>
+              <div class="credit-display">
+                <div class="credit-label">FROM QUESTION</div>
+                <div class="credit-path"><span>Review</span><b>→</b><span>Decide</span><b>→</b><span>Monitor</span></div>
+                <div class="credit-label">TO CLARITY</div>
+              </div>
+            </div>
+            <div class="project-details">
+              <div class="project-no">04 <span>/ INDUSTRY PROTOTYPE</span></div>
+              <h3>Sourcefin Credit Intelligence</h3>
+              <p class="project-descriptor">Better visibility into the credit process.</p>
+              <p>During my Sourcefin internship, I contributed to Credit Committee workflow prototypes and a post-deal credit intelligence concept covering monitoring, reporting and portfolio risk.</p>
+              <div class="tech-line">Business analysis <span>·</span> Prototyping <span>·</span> Risk concepts</div>
+              <div class="project-actions"><a href="#experience">Read the experience ↗</a><span class="quiet-note">Industry work — no public code</span></div>
+            </div>
+          </article>
+
+          <article class="project project-small" data-category="creative">
+            <div class="project-art art-commute"><div class="art-meta"><span>WITS / 05</span><span>3D GAME</span></div><div class="commute-poster"><span>7:55</span><small>AM AT WITS EDGE</small><b>↗</b></div></div>
+            <div class="project-details"><div class="project-no">05 <span>/ GAME</span></div><h3>7:55AM at Wits Edge</h3><p>A three-level browser game spanning driving, traffic timing and stealth, built in a six-person team.</p><div class="tech-line">Three.js <span>·</span> WebGL <span>·</span> JavaScript</div><div class="project-actions"><a href="https://wmc.ms.wits.ac.za/students/sgroup3883/index.html" target="_blank" rel="noopener noreferrer">Play ↗</a><a href="https://github.com/DeanFeldman/Wits-commute-simulator" target="_blank" rel="noopener noreferrer">Source ↗</a></div></div>
+          </article>
+
+          <article class="project project-small" data-category="creative">
+            <div class="project-art art-kalooki"><div class="art-meta"><span>KALOOKI / 06</span><span>MULTIPLAYER</span></div><div class="playing-cards"><span>♠<small>A</small></span><span>♥<small>K</small></span><span>♣<small>Q</small></span></div></div>
+            <div class="project-details"><div class="project-no">06 <span>/ GAME</span></div><h3>Kalooki Online</h3><p>Real-time multiplayer card game with rooms, WebSocket communication, game rules and scoring.</p><div class="tech-line">Node.js <span>·</span> WebSockets <span>·</span> JavaScript</div><div class="project-actions"><a href="https://kalooki.onrender.com/" target="_blank" rel="noopener noreferrer">Play ↗</a><a href="https://github.com/DeanFeldman/Kalooki" target="_blank" rel="noopener noreferrer">Source ↗</a></div></div>
+          </article>
+
+          <article class="project project-small" data-category="software">
+            <div class="project-art art-hand"><div class="art-meta"><span>LEND A HAND / 07</span><span>COMMUNITY</span></div><div class="hand-poster"><span>GIVE.</span><span>SHARE.</span><span>CONNECT.</span></div></div>
+            <div class="project-details"><div class="project-no">07 <span>/ MOBILE APP</span></div><h3>Lend A Hand</h3><p>An Android resource-sharing app connecting donors with people seeking items in their community.</p><div class="tech-line">Java <span>·</span> Android <span>·</span> PHP <span>·</span> MySQL</div><div class="project-actions"><a href="https://github.com/DeanFeldman/Lend-A-HAND-" target="_blank" rel="noopener noreferrer">Source ↗</a></div></div>
+          </article>
+        </div>
+        <div class="after-work"><span>MORE EXPERIMENTS LIVE ON GITHUB</span><a href="https://github.com/DeanFeldman" target="_blank" rel="noopener noreferrer">Explore the rest ↗</a></div>
       </div>
     </section>
-    <section class="section light-section" id="work">
-      <div class="shell">
-        <div class="section-intro">
-          <div><p class="eyebrow eyebrow-dark">01 / Selected work</p><h2>Proof in the <em>projects.</em></h2></div>
-          <p>A selection of products and projects across analytics, enterprise systems, software engineering and creative development. Explore the code and demos where public.</p>
-        </div>
-        <div class="filters" id="project-filters" aria-label="Filter projects"></div>
-        <p class="result-count" id="result-count" role="status" aria-live="polite"></p>
-        <div class="project-grid" id="project-grid"></div>
-        <noscript><p>Enable JavaScript to view the interactive project collection. The repositories are also available on <a href="https://github.com/DeanFeldman">GitHub</a>.</p></noscript>
-        <a class="inline-cta" href="https://github.com/DeanFeldman" target="_blank" rel="noopener noreferrer">Explore all GitHub repositories <span aria-hidden="true">↗</span></a>
-      </div>
-    </section>
-    <section class="section experience-section" id="experience">
-      <div class="shell">
-        <div class="section-intro section-intro-dark">
-          <div><p class="eyebrow">02 / Experience</p><h2>Learning where <em>work happens.</em></h2></div>
-          <p>Experience spanning commercial analysis, credit processes, enterprise software and data-driven decision-making.</p>
-        </div>
+
+    <section class="experience-section" id="experience" aria-labelledby="experience-title">
+      <div class="wrap">
+        <div class="section-kicker ink-kicker"><span>02 / THE REAL-WORLD STUFF</span><span>WORK &amp; INDUSTRY EXPOSURE</span></div>
+        <div class="experience-heading"><h2 id="experience-title">Classroom to<br><em>conference room.</em></h2><p>I care about the reason behind the work, not just the implementation.</p></div>
         <div class="experience-list">
-          <article class="experience-row">
-            <div class="experience-meta"><span>July 2026</span><span class="experience-type">Internship</span></div>
-            <div class="experience-main"><h3>FNB <span>— POP Business Unit</span></h3><p>Helped develop <strong>Project Compass</strong>, an AI-powered enterprise solution addressing operational challenges. Worked with a cross-functional team on requirements, backend services and a functional MVP using Java, Spring Boot, REST APIs and AI-assisted engineering.</p><div class="chips"><span>Enterprise engineering</span><span>AI solutions</span><span>Problem-solving</span></div></div>
-          </article>
-          <article class="experience-row">
-            <div class="experience-meta"><span>July 2026</span><span class="experience-type">Internship</span></div>
-            <div class="experience-main"><h3>Sourcefin <span>— Credit Intelligence &amp; Digital Transformation</span></h3><p>Engaged with stakeholders to understand credit approval and post-deal processes. Contributed to a <strong>Credit Committee Management System prototype</strong> and a proposed credit intelligence platform covering covenant monitoring, portfolio risk and reporting.</p><div class="chips"><span>Business analysis</span><span>Credit processes</span><span>Stakeholder engagement</span></div></div>
-          </article>
-          <article class="experience-row">
-            <div class="experience-meta"><span>Jan–Feb 2026</span><span class="experience-type">Virtual programme</span></div>
-            <div class="experience-main"><h3>QuantifyYourFuture <span>— Financial Services</span></h3><p>Worked on data-focused projects facilitated by leading South African banks, including Absa, FirstRand, FNB, Nedbank and Standard Bank. Practised <strong>problem framing, data exploration, modelling, visualisation</strong> and collaborative analysis.</p><div class="chips"><span>Data analysis</span><span>Financial services</span><span>Team collaboration</span></div></div>
-          </article>
+          <article class="exp-entry"><div class="exp-index">01</div><div class="exp-title"><h3>FNB</h3><p>POP Business Unit · Vacation Work Intern</p></div><div class="exp-body"><span>JULY 2026</span><p>Helped build Project Compass, an AI-powered enterprise solution. Worked across requirements, backend integration, and an MVP with Java, Spring Boot and AI technologies.</p></div></article>
+          <article class="exp-entry"><div class="exp-index">02</div><div class="exp-title"><h3>Sourcefin</h3><p>Credit Intelligence &amp; Digital Transformation Intern</p></div><div class="exp-body"><span>JULY 2026</span><p>Worked with stakeholders on credit approval and post-deal workflows; prototyped a Credit Committee management system and explored monitoring and portfolio risk tools.</p></div></article>
+          <article class="exp-entry"><div class="exp-index">03</div><div class="exp-title"><h3>QuantifyYourFuture</h3><p>Virtual Internship Programme</p></div><div class="exp-body"><span>JAN — FEB 2026</span><p>Worked on financial-services data projects facilitated by Absa, FirstRand, FNB, Nedbank and Standard Bank, applying problem framing, data analysis and visualisation.</p></div></article>
+        </div>
+        <a class="simple-link" href="cv.html">More detail in my CV <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+
+    <section class="recognition-section" id="recognition" aria-labelledby="recognition-title">
+      <div class="wrap">
+        <div class="section-kicker"><span>03 / SOME GOOD NEWS</span><span>AWARDS &amp; COMPETITIONS</span></div>
+        <div class="recognition-heading"><h2 id="recognition-title">A few <em>highlights.</em></h2><p>Teamwork, sharp thinking and a willingness to say yes to a difficult brief.</p></div>
+        <div class="awards">
+          <article class="award award-pg"><div class="award-top"><span>WINNER / 2026</span><span>01</span></div><div class="award-mark">P&amp;G<span>↗</span></div><h3>StandOut 2026</h3><p>Developed a data-driven 12-month SlowMag growth strategy with a team, bringing together consumer insights, financial modelling and commercial recommendations.</p></article>
+          <article class="award award-bcg"><div class="award-top"><span>WINNER / 2025</span><span>02</span></div><div class="award-mark">BCG<span>✳</span></div><h3>Grow@BCG</h3><p>Co-developed AfriGROW, a FinTech concept addressing the SMME funding gap through purchase order financing, mentorship and AI-powered reporting.</p></article>
+          <article class="award award-visa"><div class="award-top"><span>FINALIST / 2026</span><span>03</span></div><div class="award-mark">VISA<span>→</span></div><h3>Visa Case Competition</h3><p>Researched the credit card market and proposed a customer value proposition grounded in a digital-first strategy.</p></article>
+          <article class="award award-sanren"><div class="award-top"><span>NATIONAL FINALIST / 2025</span><span>04</span></div><div class="award-mark">CTF<span>⌘</span></div><h3>SANReN Cyber Security Challenge</h3><p>National finals participant. Part of the first team to complete the Orange Cyberdefense API Challenge; placed second individually in lock-picking.</p></article>
+        </div>
+        <div class="academic-note"><span>AND IN THE CLASSROOM</span><p>Wits Dean’s List in <strong>2024 and 2025</strong>, four Certificates of Merit, and Golden Key recognition.</p><a href="cv.html#education">Academic record ↗</a></div>
+      </div>
+    </section>
+
+    <section class="leadership-section" id="leadership" aria-labelledby="leadership-title">
+      <div class="wrap leadership-inner">
+        <div class="leadership-intro"><div class="section-kicker"><span>04 / BUILDING WITH OTHERS</span></div><h2 id="leadership-title">Good work<br>is a <em>team sport.</em></h2><p>Some of the most rewarding things I’ve done have involved getting other people into a room, giving them the tools and watching them figure things out.</p></div>
+        <div class="leadership-panels">
+          <article class="leadership-panel"><span>WITS / 2026 — PRESENT</span><h3>Wits Cyber</h3><p class="panel-role">Technical Cybersecurity Mentor</p><p>Lead the cybersecurity interest group, coordinate CTF infrastructure and student training, and helped prepare four students who qualified for SANReN nationals. Organised technical delivery for the 2026 Wits Cybersecurity Hackathon.</p><a href="https://github.com/DeanFeldman/WitsCyber" target="_blank" rel="noopener noreferrer">Wits Cyber on GitHub ↗</a></article>
+          <article class="leadership-panel"><span>KING DAVID LINKSFIELD</span><h3>Early days.</h3><p class="panel-role">SMACC Student Leader · Cycling Captain</p><p>Served as a student leader in the Sound, Media and Communications Committee and captained the cycling team. Earned Sound and Lighting Honours, Cycling Full Colours and a Selfless Commitment Award.</p></article>
         </div>
       </div>
     </section>
-    <section class="section achievement-section" id="achievements">
-      <div class="shell">
-        <div class="section-intro">
-          <div><p class="eyebrow eyebrow-dark">03 / Recognition</p><h2>Challenge accepted.<br><em>Results delivered.</em></h2></div>
-          <p>Case competitions and technical challenges that turned structured thinking into tangible outcomes.</p>
-        </div>
-        <div class="achievement-grid">
-          <article class="achievement-card award-feature"><span class="award-year">2026 · Winner</span><h3>P&amp;G StandOut</h3><p>Built and presented a data-driven, 12-month growth strategy for SlowMag, combining consumer insights, financial modelling, channel strategy and product innovation.</p><div class="award-footer">Commercial strategy <span aria-hidden="true">↗</span></div></article>
-          <article class="achievement-card"><span class="award-year">2025 · Winner</span><h3>Grow@BCG</h3><p>Co-developed AfriGROW, a FinTech concept focused on South Africa’s SMME funding gap through purchase order financing and AI-powered reporting.</p><div class="award-footer">Consulting case competition</div></article>
-          <article class="achievement-card"><span class="award-year">2026 · Finalist</span><h3>Visa Case Competition</h3><p>Developed a customer value proposition for a South African credit card through market research, product benchmarking and commercial analysis.</p><div class="award-footer">Financial products &amp; strategy</div></article>
-          <article class="achievement-card"><span class="award-year">2025 · National finalist</span><h3>SANReN Cyber Security Challenge</h3><p>Competed in the national finals; part of the first team to finish the Orange Cyberdefense API Challenge and placed second individually in lock-picking.</p><div class="award-footer">Cybersecurity &amp; teamwork</div></article>
-        </div>
-        <p class="recognition-note">Also recognised on the Wits Dean’s List in 2024 and 2025, with Certificates of Merit in Basic Analysis II, Computer Networks II, Database Fundamentals II and Introduction to Mathematical Statistics II.</p>
-      </div>
-    </section>
-    <section class="section leadership-section" id="leadership">
-      <div class="shell leadership-layout">
-        <div class="leadership-heading"><p class="eyebrow">04 / Leadership</p><h2>Making space<br>for others<br><em>to grow.</em></h2><p>Leadership means building the environment, doing the preparation and helping others succeed.</p></div>
-        <div class="leadership-entries">
-          <article class="leader-card"><div class="leader-top"><span>WITS CYBER · 2026–PRESENT</span><span>01</span></div><h3>Technical Cybersecurity Mentor</h3><p>Lead the Wits Cybersecurity Interest Group, coordinate training infrastructure and CTF challenges, and mentor students in practical security. Organised an internal competition that supported four students qualifying for the SANReN national finals and led technical delivery of the 2026 Wits Cybersecurity Hackathon.</p></article>
-          <article class="leader-card"><div class="leader-top"><span>KING DAVID LINKSFIELD HIGH SCHOOL</span><span>02</span></div><h3>Student Leader &amp; Cycling Captain</h3><p>Served as a student leader in the Sound, Media and Communications Committee (SMACC) and as Cycling Captain. Awarded Sound and Lighting Honours, Cycling Full Colours and the Selfless Commitment Award.</p></article>
+
+    <section class="about-section" id="about" aria-labelledby="about-title">
+      <div class="wrap about-inner">
+        <div class="about-copy"><div class="section-kicker ink-kicker"><span>05 / THE PERSON BEHIND THE TABS</span></div><h2 id="about-title">The short <em>version.</em></h2><p>I study Computer Science at Wits, but I'm equally drawn to the questions around a product: Who is it for? What problem does it solve? And what would make it genuinely useful?</p><p>I’m interested in consulting, analytics, financial services, software engineering and the occasional side project that turns into something much bigger than planned.</p><p>When I'm offline: cycling, video work, sound and lighting, and making things with my hands.</p></div>
+        <div class="about-notebook">
+          <div class="notebook-top"><span>MY TOOLKIT</span><span>FIELD NOTES / 01</span></div>
+          <dl><div><dt>Languages</dt><dd>Python, Java, C++, TypeScript, JavaScript, SQL</dd></div><div><dt>Building</dt><dd>React, Node.js, Spring Boot, PostgreSQL, Git</dd></div><div><dt>Thinking</dt><dd>Data analysis, requirements, market research, financial modelling</dd></div><div><dt>Working</dt><dd>Presenting, leading, questioning, collaborating</dd></div></dl>
+          <div class="notebook-foot">ALWAYS LEARNING. NEVER FINISHED.</div>
         </div>
       </div>
     </section>
-    <section class="section about-section light-section" id="about">
-      <div class="shell about-layout">
-        <div><p class="eyebrow eyebrow-dark">05 / About me</p><h2>Curious by nature.<br><em>Practical by design.</em></h2></div>
-        <div class="about-description"><p>I'm pursuing a double major in Computer Science at the University of the Witwatersrand. What motivates me is the connection between technical thinking and real-world impact — understanding the business context, evaluating the evidence and choosing the right solution.</p><p>Outside of coursework and internships, I mentor students, build projects, take on case competitions and continue learning about consulting, analytics, cybersecurity and emerging technology.</p>
-          <div class="skill-columns">
-            <div><h3>Analytical &amp; business</h3><p>Business analysis · Data analytics · Financial modelling · Market research · Requirements gathering</p></div>
-            <div><h3>Technical toolkit</h3><p>Python · Java · SQL · TypeScript · React · Node.js · Spring Boot · PostgreSQL · Git</p></div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="contact-section">
-      <div class="shell contact-layout">
-        <div><p class="eyebrow">Let’s connect</p><h2>Good problems are<br><em>worth solving.</em></h2><p>Interested in technology, consulting, analytics or a project worth building? I'd be happy to connect.</p></div>
-        <div class="contact-actions"><a class="button button-primary" href="mailto:dean.feldman05@gmail.com">Email me <span aria-hidden="true">↗</span></a><a class="button button-ghost" href="https://www.linkedin.com/in/dean-feldman/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a><a class="button button-ghost" href="cv.html">View full CV <span aria-hidden="true">↗</span></a></div>
-      </div>
+
+    <section class="contact-section" aria-labelledby="contact-title">
+      <div class="wrap"><div class="contact-top"><span>06 / SAY HELLO</span><span>OPEN TO GOOD CONVERSATIONS</span></div><h2 id="contact-title">Have something<br><em>interesting in mind?</em></h2><p>Whether it's a role, a project or just a conversation about ideas — I'd like to hear it.</p><div class="contact-links"><a href="mailto:dean.feldman05@gmail.com">Email me ↗</a><a href="https://www.linkedin.com/in/dean-feldman/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="https://github.com/DeanFeldman" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="cv.html">My CV ↗</a></div></div>
     </section>
   </main>
-  <footer class="footer"><div class="shell footer-content"><a href="#top">DF<span>.</span> <small>Back to top ↑</small></a><span>© <span id="year">2026</span> Dean Feldman</span><a href="https://github.com/DeanFeldman" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></footer>
+  <footer class="footer"><div class="wrap footer-inner"><span>© <span id="year">2026</span> DEAN FELDMAN</span><span>BUILT FROM SCRATCH. MADE TO LAST.</span><a href="#top">BACK TO TOP ↑</a></div></footer>
 </body>
 </html>
