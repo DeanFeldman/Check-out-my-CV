@@ -35,7 +35,7 @@ h3{font-weight:750}
 .site-nav .nav-cv:hover{background:var(--blue)}
 .menu-toggle{display:none;border:1px solid var(--ink);background:transparent;padding:10px 12px;cursor:pointer}
 .menu-toggle span{display:block;width:23px;height:2px;background:var(--ink);margin:4px 0}
-.overline,.section-kicker,.hero-topline,.hero-bottom,.art-meta,.project-no,.project-filters,.tech-line,.after-work,.exp-index,.exp-body>span,.award-top,.academic-note>span,.leadership-panel>span,.notebook-top,.notebook-foot,.contact-top,.footer{font-size:.68rem;font-weight:800;letter-spacing:.1em}
+.overline,.section-kicker,.hero-topline,.art-meta,.project-no,.project-filters,.tech-line,.after-work,.exp-index,.exp-body>span,.award-top,.academic-note>span,.leadership-panel>span,.notebook-top,.notebook-foot,.contact-top,.footer{font-size:.68rem;font-weight:800;letter-spacing:.1em}
 .hero{padding-top:25px}
 .hero-topline{display:flex;justify-content:space-between;gap:15px;padding-bottom:15px;border-bottom:1px solid var(--rule)}
 .hero-headline{display:grid;grid-template-columns:minmax(0,1fr) 295px;gap:4.5%;align-items:end;padding:56px 0 70px}
@@ -53,7 +53,6 @@ h3{font-weight:750}
 .hero-note .note-small{font-size:.84rem;line-height:1.7;color:var(--muted);margin:22px 0}
 .arrow-link,.simple-link{font-size:.82rem;display:inline-flex;gap:24px;align-items:center;border-bottom:1px solid var(--ink);padding-bottom:5px;font-weight:800}
 .arrow-link:hover,.simple-link:hover{color:var(--blue);border-color:var(--blue)}
-.hero-bottom{display:flex;justify-content:space-between;gap:15px;border-top:1px solid var(--rule);padding:17px 0 19px}
 .ticker{background:var(--coral);color:var(--ink)}
 .ticker-inner{display:grid;grid-template-columns:repeat(4,1fr)}
 .ticker-inner p{margin:0;display:flex;flex-wrap:wrap;gap:10px;align-items:baseline;padding:21px 16px;border-right:1px solid rgba(35,33,31,.24);font-weight:800;font-size:.89rem}
@@ -313,7 +312,6 @@ h3{font-weight:750}
   .hero-note{display:block;margin-top:39px}
   .hero-note p:not(.note-small){font-size:1.35rem}
   .hero-note .note-small{margin:16px 0}
-  .hero-bottom span:last-child{display:none}
   .ticker-inner p{padding:15px 9px;font-size:.72rem;gap:5px}
   .ticker-inner p:nth-child(odd){padding-left:0}
   .ticker-inner p span{font-size:.62rem}
