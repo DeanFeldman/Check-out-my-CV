@@ -1,79 +1,47 @@
-# Dean Feldman — Website Showcase
+# Dean Feldman — Professional Portfolio
 
-A responsive portfolio for displaying Dean Feldman's websites, dashboards, mobile apps, games and software projects in one place.
+A responsive personal portfolio and printable web CV, highlighting Dean's work across computer science, data analytics, enterprise software, consulting case competitions and technical leadership.
 
-## Live site
+## Site structure
 
-After GitHub Pages is enabled, the portfolio will be available at:
+- **Homepage (`index.html`)** — introduction, featured project portfolio, experience, competition achievements, leadership, skills, contact.
+- **Web CV (`cv.html`)** — structured CV with a **Print / Save as PDF** action.
+- **Project catalogue (`script.js`)** — verified public GitHub links, project categories, available demo links and accessible filters.
+- **Design system (`styles.css`)** — responsive layouts, mobile navigation, light/dark sections and print styling.
 
-```text
-https://deanfeldman.github.io/website-showcase/
+The site uses plain HTML, CSS and JavaScript — no framework or build pipeline needed.
+
+## Local preview
+
+Open `index.html` in a browser, or use a small local server:
+
+```bash
+python3 -m http.server 8080
 ```
 
-## Features
+Then visit http://localhost:8080.
 
-- Data-driven project cards generated from `script.js`
-- Project filters generated automatically from project categories
-- Responsive desktop and mobile layouts
-- Full CV page with print / Save as PDF support
-- LinkedIn, GitHub and email links
-- Design-inspiration section
-- GitHub Pages deployment workflow
-- Reduced-motion accessibility support
+## Updating content
 
-## Add or edit projects
+- Edit `script.js` to add or update project cards and public links.
+- Edit `index.html` for professional experience, recognition, leadership and introduction.
+- Edit `cv.html` for the printable CV.
+- Update `styles.css` to change the design.
+- Avoid including private company code, credentials or personal phone numbers on the public site.
 
-Open `script.js` and edit the `projects` array.
+## GitHub Pages deployment
 
-```js
-{
-  title: "Project name",
-  category: "web-app",
-  label: "Short project type",
-  description: "Project description",
-  tags: ["HTML", "CSS", "JavaScript"],
-  sourceUrl: "https://github.com/username/repository",
-  liveUrl: "https://username.github.io/repository",
-  gradient: "linear-gradient(...)"
-}
-```
+A workflow at `.github/workflows/pages.yml` deploys the site after changes are merged into `main`.
 
-The HTML project grid, total project count and filter buttons all update from this array. You do not need to manually add project cards to `index.html`.
+In the repository's **Settings → Pages**, choose **GitHub Actions** as the build/deployment source. If Pages is enabled for this repository, the expected site URL is:
 
-## CV
+https://deanfeldman.github.io/Check-out-my-CV/
 
-The full web CV is in `cv.html`. It includes a print button, allowing visitors to print it or save it as a PDF from their browser.
+The web CV replaces the old static PDF download button with browser printing, so it won't silently serve an out-of-date PDF.
 
-The public page intentionally excludes a phone number. Update the contact section in `cv.html` if you want to publish one.
+## Content principles
 
-## Design inspiration
-
-The portfolio lists the resources that informed its visual direction:
-
-- [Anime.js](https://animejs.com/)
-- [Motion](https://motion.dev/docs)
-- [Kokonut UI](https://kokonutui.com/docs)
-- [Bklit](https://bklit.com/)
-- [Manus](https://manus.im/)
-- [ReactBits](https://reactbits.dev/)
-
-## Run locally
-
-No installation is required. Open `index.html` directly or use the VS Code Live Server extension.
-
-## Deploy with GitHub Pages
-
-1. Open **Settings → Pages** in the GitHub repository.
-2. Under **Build and deployment**, choose **GitHub Actions**.
-3. Push or merge changes into `main`.
-4. The workflow in `.github/workflows/pages.yml` deploys the site.
-
-## Main files
-
-```text
-index.html       Portfolio home page
-cv.html          Full CV page
-script.js        Project and design-source data
-styles.css       Shared styling
-assets/          Favicon and optional media
-```
+- Only public source repositories are linked; the Sourcefin project is presented as a professional case study.
+- Third-party demo links come from project README documentation; verify deployments periodically.
+- Competitions and programmes are distinguished from formal employment.
+- Business claims describe contributions and prototypes accurately rather than implying deployed production systems.
