@@ -304,7 +304,7 @@ h3{font-weight:750}
   .hero-topline span:last-child{display:none}
   .hero-headline{padding:38px 0}
   .overline{font-size:.6rem}
-  .hero h1{font-size:clamp(4.65rem,15vw,8rem)}
+  .hero h1{font-size:clamp(3.5rem,13.2vw,8rem)}
   .hero h1 .scribble{text-decoration-thickness:4px;text-underline-offset:7px}
   .hero-note{display:block;margin-top:39px}
   .hero-note p:not(.note-small){font-size:1.35rem}
@@ -323,7 +323,7 @@ h3{font-weight:750}
   .project-art,.project-small .project-art{min-height:295px}
   .project-wide>.project-art{min-height:330px}
   .project-details,.project-wide .project-details{padding:28px 24px;min-height:0}
-  .project-wide .project-details h3{font-size:3.5rem}
+  .project-wide .project-details h3{font-size:clamp(2.6rem,10vw,3.5rem);overflow-wrap:anywhere}
   .scoreboard{top:20%;padding:18px}
   .scoreboard-runs{margin:27px 0 12px;font-size:2.6rem}
   .scoreboard-lines{height:58px}
@@ -332,22 +332,22 @@ h3{font-weight:750}
   .hand-poster{font-size:4rem}
   .after-work{flex-direction:column;gap:10px}
   .experience-heading{display:block;padding:35px 0}
-  .experience-heading h2{font-size:clamp(4rem,12vw,6.7rem)}
+  .experience-heading h2{font-size:clamp(3.3rem,11.3vw,6.7rem)}
   .experience-heading>p{margin:25px 0 0}
   .exp-entry{grid-template-columns:34px 1fr;gap:14px;padding:25px 0}
   .exp-title h3{font-size:2.4rem}
   .recognition-heading{display:block;margin:35px 0}
-  .recognition-heading h2{font-size:clamp(4rem,12vw,6.7rem)}
+  .recognition-heading h2{font-size:clamp(3.7rem,11vw,6.7rem)}
   .recognition-heading p{max-width:100%;margin-top:20px}
   .awards{grid-template-columns:1fr;gap:13px}
   .award{min-height:290px}
   .award-mark{font-size:6.6rem;margin:28px 0 26px}
-  .leadership-intro h2,.about-copy h2{font-size:clamp(4.7rem,14vw,7rem);margin:36px 0 24px}
+  .leadership-intro h2,.about-copy h2{font-size:clamp(3.7rem,12vw,7rem);margin:36px 0 24px}
   .leadership-panel{padding:25px}
   .leadership-panel h3{font-size:3.35rem}
   .about-notebook{margin:0 12px;padding:22px}
   .about-notebook dl>div{grid-template-columns:1fr;gap:6px;padding:15px 0}
-  .contact-section h2{font-size:clamp(4.6rem,13vw,8rem);margin:45px 0 28px}
+  .contact-section h2{font-size:clamp(3.3rem,11vw,8rem);margin:45px 0 28px}
   .contact-top span:last-child{display:none}
   .footer-inner{flex-wrap:wrap;gap:15px}
   .footer-inner span:nth-child(2){display:none}
