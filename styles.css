@@ -354,7 +354,6 @@ h3{font-weight:750}
   .contact-section h2{font-size:clamp(3.3rem,11vw,8rem);margin:45px 0 28px}
   .contact-email{width:100%}
   .contact-email strong{font-size:clamp(1.33rem,5.8vw,2.4rem)}
-  .contact-email-arrow{font-size:1.75rem}
   .contact-top span:last-child{display:none}
   .footer-inner{flex-wrap:wrap;gap:15px}
   .footer-inner span:nth-child(2){display:none}
