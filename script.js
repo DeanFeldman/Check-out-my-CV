@@ -1,234 +1,68 @@
-// Edit this array to update the portfolio. Project cards, counts and filters are generated automatically.
-const projects = [
-  {
-    title: "DocSync",
-    category: "web-app",
-    label: "Document workspace",
-    description: "A document synchronisation workspace for viewing, comparing and updating matching content across Word documents.",
-    tags: ["React", "TypeScript", "Electron"],
-    sourceUrl: "https://github.com/DeanFeldman/DocSync",
-    liveUrl: "",
-    gradient: "linear-gradient(145deg, #6555d9, #30285f 55%, #111522)"
-  },
-  {
-    title: "Ubuntu Health",
-    category: "web-app",
-    label: "Healthcare platform",
-    description: "A community clinic appointment and queue-management platform focused on improving access, visibility and patient flow.",
-    tags: ["React", "Node.js", "Supabase"],
-    sourceUrl: "https://github.com/DeanFeldman/Ubuntu-Health",
-    liveUrl: "",
-    gradient: "linear-gradient(145deg, #0c8f88, #14504c 55%, #0d181a)"
-  },
-  {
-    title: "Lend A Hand",
-    category: "mobile-app",
-    label: "Community mobile app",
-    description: "A resource-sharing application connecting people with surplus items to community members who need them.",
-    tags: ["Android", "Java", "PHP", "MySQL"],
-    sourceUrl: "https://github.com/DeanFeldman/Lend-A-HAND-",
-    liveUrl: "",
-    gradient: "linear-gradient(145deg, #d36d3d, #6d321e 55%, #21130f)"
-  },
-  {
-    title: "Kalooki",
-    category: "game",
-    label: "Multiplayer card game",
-    description: "A browser-based multiplayer Kalooki implementation with synchronised game state, meld validation, turns and scoring.",
-    tags: ["JavaScript", "Networking", "Game Logic"],
-    sourceUrl: "https://github.com/DeanFeldman/Kalooki",
-    liveUrl: "",
-    gradient: "linear-gradient(145deg, #126b61, #123632 55%, #0c1719)"
-  },
-  {
-    title: "Credit Intelligence",
-    category: "dashboard",
-    label: "Financial technology",
-    description: "An AI-enabled credit monitoring and committee workflow prototype with portfolio analytics, covenant tracking and reporting.",
-    tags: ["Dashboard", "Finance", "AI", "Data UI"],
-    sourceUrl: "",
-    liveUrl: "",
-    gradient: "linear-gradient(145deg, #3362a5, #182e51 55%, #0d1522)"
-  },
-  {
-    title: "Website Showcase",
-    category: "website",
-    label: "Portfolio website",
-    description: "This responsive portfolio: a data-driven project gallery, CV hub and professional profile built for GitHub Pages.",
-    tags: ["HTML5", "CSS", "JavaScript"],
-    sourceUrl: "https://github.com/DeanFeldman/website-showcase",
-    liveUrl: "https://deanfeldman.github.io/website-showcase/",
-    gradient: "linear-gradient(145deg, #7d5be7, #39296e 55%, #121421)"
-  }
+const projects=[
+  {title:"Stat'sTheGame",category:"analytics",type:"Sports analytics platform",lead:"From raw cricket events to trusted, explorable data.",description:"An event-driven cricket analytics system with validated submissions, statistical dashboards, dataset exports and a versioned API.",tags:["React","TypeScript","PostgreSQL","Node.js"],github:"https://github.com/DeanFeldman/StatsTheGame",demo:"https://sport-analytics-tool-web.pages.dev/",theme:"data",index:"01"},
+  {title:"Sourcefin Credit Intelligence",category:"business",type:"Financial services prototype",lead:"Making complex credit workflows easier to navigate.",description:"A proposed platform and prototypes for credit committee workflows, covenant monitoring, portfolio insights and post-deal reporting, developed during my Sourcefin internship.",tags:["Business analysis","Credit processes","Dashboards","Prototyping"],github:"",demo:"",theme:"finance",index:"02"},
+  {title:"Ubuntu Health",category:"business",type:"Community healthcare platform",lead:"More clarity for patients. Better flow for clinics.",description:"A clinic appointment and queue management platform with booking, queue tracking, facility information and administrative functionality.",tags:["React","Node.js","Express","Supabase"],github:"https://github.com/DeanFeldman/Ubuntu-Health",demo:"https://ubuntu-health-geb6dbegejfmenc7.southafricanorth-01.azurewebsites.net",theme:"health",index:"03"},
+  {title:"DocSync",category:"engineering",type:"Windows desktop application",lead:"Coordinated document changes, without the chaos.",description:"A local-first tool to compare related Word documents, identify repeated content, preview proposed changes and generate new document versions.",tags:["Electron","React","TypeScript","Document workflows"],github:"https://github.com/DeanFeldman/DocSync",demo:"https://github.com/DeanFeldman/DocSync/releases/latest",demoLabel:"Releases ↗",theme:"docs",index:"04"},
+  {title:"7:55AM at Wits Edge",category:"creative",type:"3D browser game",lead:"A chaotic journey to class — in three levels.",description:"A team-built 3D campus game exploring precision driving, traffic timing and stealth through custom gameplay, shaders and interactive environments.",tags:["JavaScript","Three.js","WebGL","Vite"],github:"https://github.com/DeanFeldman/Wits-commute-simulator",demo:"https://wmc.ms.wits.ac.za/students/sgroup3883/index.html",theme:"game",index:"05"},
+  {title:"Kalooki Online",category:"creative",type:"Real-time multiplayer game",lead:"Card-game rules meet live multiplayer architecture.",description:"A browser-based multiplayer Kalooki game with room codes, WebSocket synchronisation, player-specific hands, meld validation and scoring.",tags:["JavaScript","Node.js","WebSockets"],github:"https://github.com/DeanFeldman/Kalooki",demo:"https://kalooki.onrender.com/",theme:"cards",index:"06"},
+  {title:"Lend A Hand",category:"engineering",type:"Android community application",lead:"Helping resources find the people who need them.",description:"An Android app for donations and requests, featuring community matchmaking, resource listings and recognition for donors.",tags:["Java","Android","PHP","MySQL"],github:"https://github.com/DeanFeldman/Lend-A-HAND-",demo:"",theme:"community",index:"07"}
 ];
-
-const designSources = [
-  {
-    name: "Anime.js",
-    role: "Animation timing and choreography",
-    url: "https://animejs.com/",
-    mark: "AJ"
-  },
-  {
-    name: "Motion",
-    role: "Modern interface motion patterns",
-    url: "https://motion.dev/docs",
-    mark: "MO"
-  },
-  {
-    name: "Kokonut UI",
-    role: "Bento layouts and polished components",
-    url: "https://kokonutui.com/docs",
-    mark: "KU"
-  },
-  {
-    name: "Bklit",
-    role: "Dashboard hierarchy and visual rhythm",
-    url: "https://bklit.com/",
-    mark: "BK"
-  },
-  {
-    name: "Manus",
-    role: "Clean product-workspace presentation",
-    url: "https://manus.im/",
-    mark: "MA"
-  },
-  {
-    name: "ReactBits",
-    role: "Interactive effects and component ideas",
-    url: "https://reactbits.dev/",
-    mark: "RB"
-  }
-];
-
-const categoryLabels = {
-  "web-app": "Web apps",
-  "mobile-app": "Mobile apps",
-  dashboard: "Dashboards",
-  game: "Games",
-  website: "Websites"
-};
-
-const grid = document.querySelector("#project-grid");
-const projectCount = document.querySelector("#project-count");
-const filtersContainer = document.querySelector("#project-filters");
-const resultCount = document.querySelector("#result-count");
-const inspirationGrid = document.querySelector("#inspiration-grid");
-
-const escapeHTML = value => String(value)
-  .replaceAll("&", "&amp;")
-  .replaceAll("<", "&lt;")
-  .replaceAll(">", "&gt;")
-  .replaceAll('"', "&quot;")
-  .replaceAll("'", "&#039;");
-
-function renderFilters() {
-  const categories = [...new Set(projects.map(project => project.category))];
-  const buttons = [
-    { value: "all", label: "All" },
-    ...categories.map(category => ({ value: category, label: categoryLabels[category] || category }))
-  ];
-
-  filtersContainer.innerHTML = buttons.map((button, index) => `
-    <button class="filter ${index === 0 ? "active" : ""}" type="button" data-filter="${escapeHTML(button.value)}">
-      ${escapeHTML(button.label)}
-    </button>
-  `).join("");
+const filters=[["all","All projects"],["analytics","Data & analytics"],["business","Business solutions"],["engineering","Engineering"],["creative","Games & creative"]];
+const escapeHTML=s=>String(s).replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;").replaceAll('"',"&quot;").replaceAll("'","&#39;");
+const projectGrid=document.querySelector("#project-grid");
+const filterRoot=document.querySelector("#project-filters");
+const resultCount=document.querySelector("#result-count");
+let activeFilter="all";
+function renderFilters(){
+  filterRoot.innerHTML=filters.map(([id,label])=>`<button type="button" class="filter ${id===activeFilter?"active":""}" data-filter="${id}" aria-pressed="${id===activeFilter}">${label}</button>`).join("");
+  filterRoot.querySelectorAll("button").forEach(button=>button.addEventListener("click",()=>{
+    activeFilter=button.dataset.filter;
+    renderFilters();
+    renderProjects();
+  }));
 }
-
-function renderProjects(filter = "all") {
-  const visibleProjects = filter === "all"
-    ? projects
-    : projects.filter(project => project.category === filter);
-
-  resultCount.textContent = `${visibleProjects.length} project${visibleProjects.length === 1 ? "" : "s"} shown`;
-
-  grid.innerHTML = visibleProjects.map(project => {
-    const originalIndex = projects.indexOf(project);
-    const liveLink = project.liveUrl
-      ? `<a href="${escapeHTML(project.liveUrl)}" target="_blank" rel="noreferrer">Live site ↗</a>`
-      : `<span class="disabled-link" aria-label="Live site not available">Live site soon</span>`;
-    const sourceLink = project.sourceUrl
-      ? `<a href="${escapeHTML(project.sourceUrl)}" target="_blank" rel="noreferrer">Source code ↗</a>`
-      : `<span class="disabled-link" aria-label="Source code is private">Private project</span>`;
-
-    return `
-      <article class="project-card reveal visible" data-category="${escapeHTML(project.category)}">
-        <div class="project-preview" style="background:${escapeHTML(project.gradient)}">
-          <div class="preview-window" aria-hidden="true">
-            <div class="preview-bar"><i></i><i></i><i></i></div>
-            <div class="preview-content">
-              <span></span><strong></strong>
-              <div class="preview-panels"><div></div><div></div></div>
-            </div>
-          </div>
+function renderProjects(){
+  const items=activeFilter==="all"?projects:projects.filter(p=>p.category===activeFilter);
+  resultCount.textContent=`${items.length} project${items.length===1?"":"s"} · ${activeFilter==="all"?"selected work":filters.find(([id])=>id===activeFilter)?.[1]||"selected work"}`;
+  projectGrid.innerHTML=items.map(p=>{
+    const links=[
+      p.demo?`<a href="${escapeHTML(p.demo)}" target="_blank" rel="noopener noreferrer">${escapeHTML(p.demoLabel||"Live project ↗")}</a>`:"",
+      p.github?`<a href="${escapeHTML(p.github)}" target="_blank" rel="noopener noreferrer">GitHub ↗</a>`:""
+    ].filter(Boolean).join("");
+    return `<article class="project-card">
+      <div class="project-graphic theme-${escapeHTML(p.theme)}" aria-hidden="true">
+        <div class="graphic-top"><span>${escapeHTML(p.index)} / PORTFOLIO</span><span>↗</span></div>
+        <div class="graphic-stage">
+          <div class="graphic-ambient"></div>
+          <span class="graphic-mark">${escapeHTML(p.title.slice(0,2).toUpperCase())}</span>
+          <div class="graphic-bars"><i></i><i></i><i></i><i></i><i></i></div>
         </div>
-        <div class="project-info">
-          <span class="project-number">${String(originalIndex + 1).padStart(2, "0")} · ${escapeHTML(project.label)}</span>
-          <h3>${escapeHTML(project.title)}</h3>
-          <p>${escapeHTML(project.description)}</p>
-          <div class="tags">${project.tags.map(tag => `<span>${escapeHTML(tag)}</span>`).join("")}</div>
-          <div class="project-links">${liveLink}${sourceLink}</div>
-        </div>
-      </article>
-    `;
+        <span class="graphic-bottom">${escapeHTML(p.type)}</span>
+      </div>
+      <div class="project-body">
+        <span class="project-type">${escapeHTML(p.type)}</span>
+        <h3>${escapeHTML(p.title)}</h3>
+        <p class="project-lead">${escapeHTML(p.lead)}</p>
+        <p class="project-description">${escapeHTML(p.description)}</p>
+        <div class="project-tags">${p.tags.map(t=>`<span>${escapeHTML(t)}</span>`).join("")}</div>
+        <div class="project-links">${links||'<span class="project-private">Company project · Details in experience</span>'}</div>
+      </div>
+    </article>`;
   }).join("");
 }
-
-function renderInspiration() {
-  inspirationGrid.innerHTML = designSources.map(source => `
-    <a class="inspiration-card reveal" href="${escapeHTML(source.url)}" target="_blank" rel="noreferrer">
-      <span class="source-mark">${escapeHTML(source.mark)}</span>
-      <div>
-        <h3>${escapeHTML(source.name)}</h3>
-        <p>${escapeHTML(source.role)}</p>
-      </div>
-      <span class="source-arrow">↗</span>
-    </a>
-  `).join("");
+if(projectGrid&&filterRoot&&resultCount){renderFilters();renderProjects();}
+const menuButton=document.querySelector(".menu-button");
+const nav=document.querySelector(".nav");
+if(menuButton&&nav){
+  menuButton.addEventListener("click",()=>{
+    const open=nav.classList.toggle("open");
+    menuButton.setAttribute("aria-expanded",String(open));
+    menuButton.setAttribute("aria-label",open?"Close navigation":"Open navigation");
+  });
+  nav.querySelectorAll("a").forEach(link=>link.addEventListener("click",()=>{
+    nav.classList.remove("open");
+    menuButton.setAttribute("aria-expanded","false");
+  }));
 }
-
-renderFilters();
-renderProjects();
-renderInspiration();
-projectCount.textContent = String(projects.length);
-
-document.querySelectorAll(".filter").forEach(button => {
-  button.addEventListener("click", () => {
-    document.querySelectorAll(".filter").forEach(item => item.classList.remove("active"));
-    button.classList.add("active");
-    renderProjects(button.dataset.filter || "all");
-  });
-});
-
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("visible");
-      observer.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.12 });
-
-document.querySelectorAll(".reveal").forEach(element => observer.observe(element));
-
-document.querySelector("#year").textContent = new Date().getFullYear();
-
-const menuButton = document.querySelector(".menu-button");
-const nav = document.querySelector(".nav");
-
-menuButton.addEventListener("click", () => {
-  const open = nav.classList.toggle("open");
-  menuButton.setAttribute("aria-expanded", String(open));
-});
-
-nav.querySelectorAll("a").forEach(link => link.addEventListener("click", () => {
-  nav.classList.remove("open");
-  menuButton.setAttribute("aria-expanded", "false");
-}));
-
-const cursorGlow = document.querySelector(".cursor-glow");
-window.addEventListener("pointermove", event => {
-  cursorGlow.style.left = `${event.clientX}px`;
-  cursorGlow.style.top = `${event.clientY}px`;
-});
+const year=document.querySelector("#year");
+if(year)year.textContent=String(new Date().getFullYear());
