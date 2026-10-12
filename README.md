@@ -1,47 +1,50 @@
-# Dean Feldman — Professional Portfolio
+# Dean Feldman — Portfolio
 
-A responsive personal portfolio and printable web CV, highlighting Dean's work across computer science, data analytics, enterprise software, consulting case competitions and technical leadership.
+A personal portfolio built as a **graphic editorial website**. No framework, generic template, gradient-card design system or build step.
 
-## Site structure
+## Design direction
 
-- **Homepage (`index.html`)** — introduction, featured project portfolio, experience, competition achievements, leadership, skills, contact.
-- **Web CV (`cv.html`)** — structured CV with a **Print / Save as PDF** action.
-- **Project catalogue (`script.js`)** — verified public GitHub links, project categories, available demo links and accessible filters.
-- **Design system (`styles.css`)** — responsive layouts, mobile navigation, light/dark sections and print styling.
+This 2026 rebuild is deliberately different from the previous dark, teal technology portfolio:
 
-The site uses plain HTML, CSS and JavaScript — no framework or build pipeline needed.
+- Warm paper base with deep-ink typography and large, expressive serif headlines.
+- Distinctive full-width coloured sections: indigo, yellow, lilac, sage and vermilion.
+- Project-specific CSS illustrations, not fabricated screenshots or AI-generated portraits.
+- Magazine-like composition with oversized type, numbered entries, asymmetrical layouts and thin rules.
+- A purpose-built companion CV page that remains usable as a printable PDF.
+- Motion kept minimal; the site works without JavaScript except for optional filtering and mobile navigation.
 
-## Local preview
+## Files
 
-Open `index.html` in a browser, or use a small local server:
+```
+index.html     Portfolio home page and project/experience content
+cv.html        Web CV; Print / Save PDF button
+styles.css     Full responsive art direction + print stylesheet
+script.js      Accessible project filters, mobile navigation and year
+assets/        Favicon and existing assets
+```
+
+## Updating details
+
+- Edit `index.html` for project text, links, case competitions, leadership and biography.
+- Edit `cv.html` for professional CV information.
+- Edit `styles.css` for visual changes.
+- Keep the company's Sourcefin work described as a prototype or concept, not public company source code.
+- Avoid adding publicly accessible phone numbers or confidential materials.
+
+## Run
+
+Open `index.html` directly, or start a local HTTP server:
 
 ```bash
 python3 -m http.server 8080
 ```
 
-Then visit http://localhost:8080.
+Then visit http://localhost:8080. The site has no package manager dependencies.
 
-## Updating content
+## Publish on GitHub Pages
 
-- Edit `script.js` to add or update project cards and public links.
-- Edit `index.html` for professional experience, recognition, leadership and introduction.
-- Edit `cv.html` for the printable CV.
-- Update `styles.css` to change the design.
-- Avoid including private company code, credentials or personal phone numbers on the public site.
+Merge the redesign branch into `main`. Under **Settings → Pages**, set **Build and deployment** source to **GitHub Actions**. The workflow at `.github/workflows/pages.yml` deploys on push to `main`.
 
-## GitHub Pages deployment
+Expected project Pages address: https://deanfeldman.github.io/Check-out-my-CV/
 
-A workflow at `.github/workflows/pages.yml` deploys the site after changes are merged into `main`.
-
-In the repository's **Settings → Pages**, choose **GitHub Actions** as the build/deployment source. If Pages is enabled for this repository, the expected site URL is:
-
-https://deanfeldman.github.io/Check-out-my-CV/
-
-The web CV replaces the old static PDF download button with browser printing, so it won't silently serve an out-of-date PDF.
-
-## Content principles
-
-- Only public source repositories are linked; the Sourcefin project is presented as a professional case study.
-- Third-party demo links come from project README documentation; verify deployments periodically.
-- Competitions and programmes are distinguished from formal employment.
-- Business claims describe contributions and prototypes accurately rather than implying deployed production systems.
+If the live website does not update, review **Actions**, ensure the repository (not an older `website-showcase` site) is deployed, and hard-refresh.
