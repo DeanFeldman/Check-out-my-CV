@@ -169,11 +169,12 @@ h3{font-weight:750}
 .recognition-heading h2{font-size:clamp(4.7rem,8.2vw,8.4rem);margin:0;letter-spacing:-.07em}
 .recognition-heading h2 em{color:var(--blue)}
 .recognition-heading p{max-width:300px;line-height:1.7;color:#5a5660}
-.awards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.awards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
 .award{min-height:455px;padding:23px 22px;display:flex;flex-direction:column;position:relative}
 .award-top{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid currentColor;padding-bottom:11px;opacity:.9}
 .award-pg{background:var(--yellow)}
 .award-bcg{background:var(--blue);color:white}
+.award-kearney{background:#f3cbbb}
 .award-visa{background:#f9efe1}
 .award-sanren{background:#bcdaca}
 .award-mark{font:750 clamp(3.4rem,5.8vw,6.5rem)/.9 var(--display);letter-spacing:-.08em;margin:46px 0 36px;display:flex;justify-content:space-between;gap:6px}
